@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "a384a43d-6d84-48d7-8f73-0cf1fb8ba809",
+		"_postman_id": "dffb4d37-4d14-4279-b9e3-815ed6d9ac42",
 		"name": "GTM-Test-Automatizado",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "6973013",
-		"_collection_link": "https://speeding-satellite-468820.postman.co/workspace/Tirea-test~482fd4db-1a5d-46f1-a8eb-1a627601e20b/collection/6973013-a384a43d-6d84-48d7-8f73-0cf1fb8ba809?action=share&source=collection_link&creator=6973013"
+		"_exporter_id": "26947067"
 	},
 	"item": [
 		{
@@ -2228,7 +2227,9 @@
 																			"listen": "test",
 																			"script": {
 																				"exec": [
-																					""
+																					"pm.test(\"Status code is 200\", function () {\r",
+																					"    pm.response.to.have.status(200);\r",
+																					"});"
 																				],
 																				"type": "text/javascript"
 																			}
